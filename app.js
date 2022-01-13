@@ -8,8 +8,12 @@ console.log(btn, color)
 
 btn.addEventListener('click', function(){
     console.log('clicou no botão')
-    const randomNumber = 2
+    const randomNumber = getRandomNumbers()
         // backgrond-color
-    document.body.style.backgroundColor = colors[randomNumber]
-    color.textContent = colors[randomNumber]
+    const mainColor = document.querySelector('#main-color')
+    mainColor.style.backgroundColor = colors[randomNumber]
 })
+
+function getRandomNumbers() {
+    return Math.floor( Math.random() * colors.length)
+}
