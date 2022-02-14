@@ -12,6 +12,7 @@ btn.addEventListener('click', function(){
         // backgrond-color
     const mainColor = document.querySelector('#main-color')
     mainColor.style.backgroundColor = colors[randomNumber]
+    color.textContent = colors[getRandomNumbers()]
 })
 
 function getRandomNumbers() {
